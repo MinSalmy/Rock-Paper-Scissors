@@ -1,0 +1,58 @@
+
+body {
+    background-color: black;
+    color: azure;
+    text-align: center;
+    font-family: 'Earth Orbiter', sans-serif;
+    font-family: 'Earth Orbiter 3D', sans-serif;
+    font-family: 'Earth Orbiter Academy', sans-serif;
+    font-family: 'Earth Orbiter Deep 3D', sans-serif;
+    font-family: 'Earth Orbiter Engraved', sans-serif;
+    font-family: 'Earth Orbiter Gradient', sans-serif;
+    font-family: 'Earth Orbiter Halftone', sans-serif;
+    font-family: 'Earth Orbiter Laser', sans-serif;
+    font-family: 'Earth Orbiter Punch', sans-serif;
+    font-family: 'Earth Orbiter Title', sans-serif;
+
+
+                                                
+}
+
+p {
+    font-size: larger;
+    padding: 10px 25%;
+}
+
+select {
+    text-align: end;
+}
+
+.btn {
+    max-height: 250px;
+    width: auto;
+    border: 1px solid azure;
+    flex: auto;
+    justify-content: center;
+    margin: 1%;
+    transition: all 0.4s ease;
+}
+
+.entering {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px mistyrose;
+    border-color: mistyrose;
+}
+
+.rounds-results-container {
+    display: flex; 
+    align-items: center;   
+    justify-content: center;
+    gap: 20%;
+}
+
+.score {
+    display: flex; 
+    align-items: center;   
+    justify-content: center;
+    flex-wrap: wrap;
+}

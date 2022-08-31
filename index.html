@@ -4,70 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+    <title>Rock Paper Scissors Lizard Spock</title>
+    <link href="http://fonts.cdnfonts.com/css/earth-orbiter" rel="stylesheet">
+                
+    <link href="styles.css" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+    
+                
 </head>
 <body>
-    <script>
-        function getComputerChoice() {
-            const maxNumber = 3;
-            const minNumber = 1;
-            let randomNumber = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
-            switch (randomNumber) {
-                case 1: return "Rock";
-                case 2: return "Paper";
-                case 3: return "Scissors";
-            }
-        }
+    <div class="header">
+        <!-- 
+        <select onChange="document.location.href=this.options[this.selectedIndex].value;">
+            <option value="/">EN</option>
+            <option value="/ru/">RU</option>
+        </select>
+        -->
+         <h1 >Welcome to the game Rock Paper Scissors Lizard Spock </h1>
+        <p>
+            Easy rules: scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, 
+            scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it 
+            always has, rock crushes scissors.
+        </p>
+    </div>
 
-        function playRound(playerSelection, computerSelection) {
-            playerSelection = playerSelection.toLowerCase();
-            computerSelection = computerSelection.toLowerCase();
-            let result;
-            if (playerSelection == computerSelection) result = -1;
-            else if (playerSelection == "rock") {
-                if (computerSelection == "paper") result = 1;
-                else result = 0;
-            }
-            else if (playerSelection == "paper") {
-                if (computerSelection == "scissors") result = 1;
-                else result = 0;                
-            }
-            else if (playerSelection == "scissors") {
-                if (computerSelection == "rock") result = 1;
-                else result = 0;
-            }
-            // -1: draw
-            // 0: player wins
-            // 1: computer wins
-            switch (result) {
-                case -1: 
-                    console.log("Draw");
-                    break;            
-                case 0: 
-                    console.log("The player won the round");
-                    break;
-                case 1: 
-                    console.log("The computer won the round");
-                    break;
-            }
-            return result;
-        }
-
-        function game() {
-            let counterPlayer = 0;
-            let counterComputer = 0;
-            for (let round = 0; round < 5; round++) {
-                let playerSelection = prompt("Rock, paper or scissors?");
-                let gameResult = playRound(playerSelection, getComputerChoice());
-                if (gameResult == 1) counterComputer++;
-                else if (gameResult == 0) counterPlayer++;
-            }
-            if (counterComputer == counterPlayer) console.log("No one wins the game");
-            else if (counterComputer > counterPlayer) console.log("The computer won the game");
-            else console.log("The player won the game");
-        }
-
-        game();
-    </script>    
+    <h2 class="subheader">Choose your weapon</h2>
+    <div class="game-container">
+        <div class="choice-container">
+            <input id="rock" class="btn" type="image" src="/images/rock.jpg">
+            <input id="paper" class="btn" type="image" src="/images/paper.jpg">
+            <input id="scissors" class="btn" type="image" src="/images/scissors.jpg">
+            <input id="lizard" class="btn" type="image" src="/images/lizard.jpg">
+            <input id="spock" class="btn" type="image" src="/images/spock.jpg">
+        <!--    <img id="rock" class="btn" src="/images/rock.jpg">-->
+        </div>
+        <div class="rounds-results-container">
+            <div class="player-score">
+                <h2>Your score</h2>
+            </div>
+            <div class="computer-score">
+                <h2>Computer score</h2>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
