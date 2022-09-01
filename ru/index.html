@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камень Ножницы Бумага Ящерица Спок</title>
+    <link href="https://fonts.cdnfonts.com/css/earth-orbiter" rel="stylesheet">      
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">         
+    <link href="../styles.css" rel="stylesheet">
+    <script src="../scripts.js" defer></script>  
+</head>
+<body>
+    <div class="header"> 
+        <div class="language">
+            <a href="../index.html">Английский</a>
+            <a href="index.html">Русский</a>
+        </div>         
+        <!--       
+        <select class="lang" onChange="document.location.href=this.options[this.selectedIndex].value;">
+            <option value="">EN</option>
+            <option value="ru">RU</option>
+        </select>
+        -->
+        
+         <h1>Добро пожаловать в игру Камень Ножницы Бумага Ящерица Спок</h1>
+        <p>
+            Правила простые: ножницы режут бумагу, бумага покрывает камень, камень давит ящерицу, 
+            ящерица отравляет спока, спок ломает ножницы, ножницы обезглавливают ящерицу, ящерица 
+            съедает бумагу, бумага подставляет спока, спок испаряет камень, и, как всегда, камень 
+            разбивает ножницы. Кто набрал 5 очков первым, тот выиграл.
+        </p>
+    </div>
+
+    <h2 class="subheader">Выбери своё оружие</h2>
+    <div class="game-container">
+        <div class="choice-container">
+            <input id="rock" class="btn" type="image" src="../images/rock.jpg">
+            <input id="paper" class="btn" type="image" src="../images/paper.jpg">
+            <input id="scissors" class="btn" type="image" src="../images/scissors.jpg">
+            <input id="lizard" class="btn" type="image" src="../images/lizard.jpg">
+            <input id="spock" class="btn" type="image" src="../images/spock.jpg">
+        </div>
+        <div class="rounds-results-container">
+            <div class="player-score">
+                <h2>Твой счёт</h2>
+            </div>
+            <div class="computer-score">
+                <h2>Счёт компьютера</h2>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

@@ -3,16 +3,21 @@ body {
     background-color: black;
     color: azure;
     text-align: center;
-    font-family: 'Earth Orbiter', sans-serif;
-    font-family: 'Earth Orbiter 3D', sans-serif;
-    font-family: 'Earth Orbiter Academy', sans-serif;
-    font-family: 'Earth Orbiter Deep 3D', sans-serif;
-    font-family: 'Earth Orbiter Engraved', sans-serif;
-    font-family: 'Earth Orbiter Gradient', sans-serif;
-    font-family: 'Earth Orbiter Halftone', sans-serif;
-    font-family: 'Earth Orbiter Laser', sans-serif;
-    font-family: 'Earth Orbiter Punch', sans-serif;
-    font-family: 'Earth Orbiter Title', sans-serif;                                                
+    font-family: 'Earth Orbiter', 'Ruslan Display', cursive, sans-serif;
+    font-family: 'Earth Orbiter 3D', 'Ruslan Display', cursive, sans-serif;
+    font-family: 'Earth Orbiter Academy', 'Ruslan Display', cursive, sans-serif;
+    font-family: 'Earth Orbiter Deep 3D', 'Ruslan Display', cursive, sans-serif;
+    font-family: 'Earth Orbiter Engraved', 'Ruslan Display', cursive, sans-serif;
+    font-family: 'Earth Orbiter Gradient', 'Ruslan Display', cursive, sans-serif;
+    font-family: 'Earth Orbiter Halftone', 'Ruslan Display', cursive, sans-serif;
+    font-family: 'Earth Orbiter Laser', 'Ruslan Display', cursive, sans-serif;
+    font-family: 'Earth Orbiter Punch', 'Ruslan Display', cursive, sans-serif;
+    font-family: 'Earth Orbiter Title', 'Ruslan Display', cursive, sans-serif;                                                
+}
+
+a {
+    padding: 5px 10px;
+    
 }
 
 p {
